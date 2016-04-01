@@ -12,7 +12,45 @@ if(is_numeric($a) & is_numeric($b)) {
     $result .= $operation;
     $result .= $b;
     echo $result . " = ";
-    echo eval("return $result;");
+//    echo eval("return $result;");
+
+    /*
+     
+    switch ($operation) {
+        case "+":
+            echo $a + $b;
+            break;
+        case "-":
+            echo $a - $b;
+            break;
+        case "*":
+            echo $a * $b;
+            break;
+        case "/":
+            echo $a / $b;
+            break;
+        case "%":
+            echo $a % $b;
+            break;
+    }
+
+    */
+
+    if($operation == "+") {
+        echo $a + $b;
+    }
+    elseif ($operation == "-") {
+        echo $a - $b;
+    }
+    elseif ($operation == "*") {
+        echo $a * $b;
+    }
+    elseif ($operation == "/") {
+        echo $a / $b;
+    }
+    elseif ($operation == "%") {
+        echo $a % $b;
+    }
 }
 else {
    echo "error of type";
